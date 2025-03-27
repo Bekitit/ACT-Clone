@@ -90,6 +90,37 @@
             flex-wrap: wrap;
             margin-top: 20px;
         }
+       .btn-container .btn {
+           padding: 8px 20px;
+           background-color: #ffffff;
+           color: #000000;
+           border: 1px solid #dee2e6;
+           font-size: 14px; 
+           font-weight: 600;
+           letter-spacing: 0.5px;
+           transition: all 0.25s ease;
+           box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+       }
+       .btn-container .btn:hover {
+           background-color: #f8f9fa;
+           border-color: #adb5bd;
+           transform: translateY(-1px);
+           box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+       }
+       .btn-container .btn:active {
+          background-color: #e9ecef;
+          transform: translateY(0);
+       }
+      .btn-container .btn:focus-visible {
+         outline: 2px solid #495057;
+         outline-offset: 2px;
+       }
+         @media (max-width: 768px) {
+        .btn-container .btn {
+        padding: 6px 16px;
+        font-size: 13px;
+        }
+        }
         
         .card {
             margin-bottom: 20px;
